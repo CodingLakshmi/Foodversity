@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>repl.it</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+	 crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+	 crossorigin="anonymous">
+
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+	 crossorigin="anonymous">
+
+	</script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+	 crossorigin="anonymous">
+	</script>
+	<style>
+    body {
+      background-color: #A5FFD6;
+    }
+
+		.aTag1 {
+			color: white;
+			text-decoration: none;
+		}
+
+		.aTag1:hover {
+			color: white;
+			text-decoration: none;
+		}
+
+		.btn-padding {
+			padding: 15px;
+			font-size: 15px;
+			width: 150px;
+		}
+
+    .img1 {
+      height: 50px;
+      width: 50px;
+    }
+	</style>
+</head>
+
+<body>
+	
+
+  <!-- Navigation Bar -->
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="#">Navbar</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <button class = "btn btn-danger" type = "button"><a href="signup.html" class = "aTag">Sign Up</a></button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Table for the formatting!! -->
+  <table class = "table">
+    <tr>
+      <td>
+        <!-- Navigation Bar + Basic things -->
+        <div class = "navigator-dashboard ">
+          <!-- Image of the Logo of the website -->
+          <img src="images/Foodversity_Logo.jpg" alt="" class = "logo">
+          <br>
+          <br>
+          <br>
+          <!-- Nav Links -->
+          <button class = "btn btn-primary btn-padding">
+            <a href="#map" class = "aTag1"> Overveiw </a>
+          </button>
+          <br>
+          <br>
+          <br>
+          <button class = "btn btn-primary btn-padding">
+            <a href="#restaurents_covid" class = "aTag1"> Finding Routes </a>
+          </button>
+          <br>
+          <br>
+          <br>
+          <button class = "btn btn-primary btn-padding">
+            <a href="#restaurents_covid" class = "aTag1"> Covid Hotspots </a>
+          </button>
+          <br>
+          <br>
+          <br>
+          <button class = "btn btn-primary btn-padding">
+            <a href="#top-picks" class = "aTag1"> Top Picks </a>
+          </button>
+        </div>
+      </td>
+
+      <td id = "map">
+        <!-- Map of the Covid-19 is where the user -->
+        <div class = "map-dashboard">
+          <iframe src="https://ourworldindata.org/grapher/weekly-covid-cases-per-million-people?time=2021-07-17" loading="lazy" style="width: 600px; height: 400px; border: 0px none;"></iframe>
+        </div>
+      </td>
+
+      <!-- Top Restaurent Picks, there are 5 top restaurents we picked and rated them from top 1 to top 5. We were initially going to add the favorite restaurents that the user liked or saved but we ran out of time so we just settled for this. -->
+      <td id = "top-picks">
+        <div class = "top-list-dashboard">
+          <h3>Top Restaurents Around You!!</h3>
+          <br>
+          <div>
+            <img src="images/can_am_pizza.jpg" alt="" class = "img1">
+            <button class = "btn btn-primary btn-padding">
+              <a href="https://www.canampizza.com/" class = "aTag1"> Can-Am Pizza </a>
+            </button>
+          </div>
+          <br>
+          <br>
+          <div>
+            <img src="images/Starbucks_logo.jpg" alt="" class = "img1">
+            <button class = "btn btn-primary btn-padding">
+              <a href="https://www.starbucks.com/" class = "aTag1"> Starbucks </a>
+            </button>
+          </div>
+          <br>
+          <br>
+          <div>
+            <img src="images/Subway_logo.jpg" alt="" class = "img1">
+            <button class = "btn btn-primary btn-padding">
+              <a href="https://www.subway.com/en-us" class = "aTag1"> Subway </a>
+            </button>
+          </div>
+          <br>
+          <br>
+          <div>
+            <img src="images/Chipotle-Logo.png" alt="" class = "img1">
+            <button class = "btn btn-primary btn-padding">
+              <a href="https://www.chipotle.com/" class = "aTag1"> Chipotle </a>
+            </button>
+          </div>
+          <br>
+          <br>
+          <div>
+            <img src="images/McDonalds_logo.png" alt="" class = "img1">
+            <button class = "btn btn-primary btn-padding">
+              <a href="https://www.mcdonalds.com/us/en-us.html" class = "aTag1"> Mc Donalds </a>
+            </button>
+          </div>
+        </div>
+      </td>
+    </tr>
+  </table>
+
+  <br>
+  <br>
+
+  <!-- Restaurents and covid routes. And other things using the API. -->
+  <div class="container" id = "restaurents_covid">
+    <div class="row">
+      <div class="col-sm">
+        <div class = "box-1">
+          <h5> Restaurents Routes </h5>
+        </div>
+      </div>
+      <div class="col-sm">
+        <div class = "box-2">
+          <h5> How to stay away from restaurent hotspots with covid cases? </h5>
+            <script src="script.js" class="jscode"></script>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <br>
+  <br>  
+  <br>
+  
+  <!-- Footer  -->
+  <footer class="bg-light text-center text-lg-start">
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: #CEE5D0;">
+      © 2020 Copyright:
+      <a class="text-dark" href="#">Our Team</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  
+</body>
+</html>
